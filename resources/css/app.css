@@ -1,0 +1,149 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+@import url('all.min.css');
+
+:root{
+    --blue: #2C79CD;
+    --darkblue: #134e99;
+}
+
+body{
+    font-family: "Parkinsans", serif;
+    font-optical-sizing: auto;
+    color: var(--darkblue);
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.fs-0{
+    font-size: 85px;
+}
+
+.row{
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mt-6{
+    margin-top: 6rem !important;
+}
+
+.mb-6{
+    margin-bottom: 6rem !important;
+}
+
+.my-6{
+    margin-top: 6ch !important;
+    margin-bottom: 6rem !important;
+}
+
+.bg-darkblue{
+    background-color: var(--darkblue);
+    color: white;
+}
+
+.btn-darkblue{
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 15px;
+}
+
+.btn-darkblue:hover{
+    background-color: #193e7a;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-tabs .nav-link {
+    color: var(--darkblue);
+    background-color: white;
+    border: 1px solid var(--darkblue);
+    border-radius: 15px 15px 0 0;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: white;
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+    border-radius: 15px 15px 0 0;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    isolation: isolate;
+    border-color: var(--darkblue);
+    background-color: var(--darkblue);
+    color: white;
+}
+
+.blue-hr{
+    opacity: 1;
+    color: var(--darkblue);
+    border-bottom: 1px solid var(--darkblue);
+}
+
+.form-control {
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#lead_form label{
+    color: white;
+}
+
+.btn-light {
+    --bs-btn-color: #134e99;
+    --bs-btn-hover-color: #134e99;
+    --bs-btn-active-color: #134e99;
+}
+
+.pt-6{
+    padding-top: 0px;
+}
+
+.w-85{
+    max-width: 85%;
+}
+
+.master-img{
+    height:740px;
+}
+
+@media (max-width: 992px) {
+
+    .mt-6{
+        margin-top: 3rem !important;
+    }
+    
+    .mb-6{
+        margin-bottom: 3rem !important;
+    }
+    
+    .my-6{
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .pt-6{
+        padding-top: 140px;
+
+    }
+
+    .w-85{
+        max-width: 99%;
+    }
+
+    .fs-0{
+        font-size: 55px;
+    }
+
+    .master-img{
+        height:350px;
+    }
+}
