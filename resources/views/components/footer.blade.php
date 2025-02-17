@@ -12,19 +12,19 @@
     
             <div class="fs-3 mb-3">{{__('Contacto')}}</div>
 
-            <a href="mailto:info@domusvallarta.com" class="link-light fs-5 text-decoration-none d-block mb-2 fw-light">
-                <i class="fa-solid fa-envelope"></i> info@residencialdosmares.com
+            <a href="mailto:hola@residencialdosmares.com" class="link-light fs-5 text-decoration-none d-block mb-2 fw-light">
+                <i class="fa-solid fa-envelope"></i> hola@residencialdosmares.com
             </a>
 
-            <a href="tel:+523225555555" class="link-light fs-5 text-decoration-none d-block mb-2 fw-light">
-                <i class="fa-solid fa-phone"></i> +52 332 555 5555
+            <a href="tel:+523223775619" class="link-light fs-5 text-decoration-none d-block mb-2 fw-light">
+                <i class="fa-solid fa-phone"></i> +52 322 377 5619
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook page" class="link-light text-decoration-none fs-4 me-3">
+            <a href="https://www.facebook.com/dosmarespuntademita/" target="_blank" rel="noopener noreferrer" aria-label="Facebook page" class="link-light text-decoration-none fs-4 me-3">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram page" class="link-light text-decoration-none fs-4">
+            <a href="https://www.instagram.com/dosmarespuntademita" target="_blank" rel="noopener noreferrer" aria-label="Instagram page" class="link-light text-decoration-none fs-4">
                 <i class="fa-brands fa-instagram"></i>
             </a>
                 

@@ -1,4 +1,4 @@
-<div class="row justify-content-evenly position-relative z-1 mb-6 pt-5 px-3 px-lg-0">
+<div class="row justify-content-evenly position-relative z-1 mb-6 pt-5 px-3 px-lg-0" id="contact-section">
     {{-- The whole world belongs to you. --}}
 
     <div class="col-12 col-lg-5 align-self-center mb-2 mb-lg-0">

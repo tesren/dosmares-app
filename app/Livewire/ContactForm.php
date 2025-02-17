@@ -2,13 +2,14 @@
 
 namespace App\Livewire;
 
+use App\Mail\NewLead;
+use App\Models\Message;
 use Livewire\Component;
+use Livewire\Attributes\Validate;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Spatie\Honeypot\Http\Livewire\Concerns\HoneypotData;
 use Spatie\Honeypot\Http\Livewire\Concerns\UsesSpamProtection;
-use Livewire\Attributes\Validate;
-use App\Mail\NewLead;
-use App\Models\Message;
 
 class ContactForm extends Component
 {
@@ -57,7 +58,7 @@ class ContactForm extends Component
 
 
         //para el webhook
-        $type = "Contacto desde el sitio web de Quadrant Luxury Ocean Living";
+        $type = "Contacto desde el sitio web de Residencial Dos Mares";
 
 
         if( app()->getLocale() == 'es' ){
@@ -77,18 +78,18 @@ class ContactForm extends Component
             'phone' => $msg->phone,
             'url' => $msg->url,
             'content' => $msg->content,
-            'interest' => 'Condominios',
-            'development' => 'Quadrant',
+            'interest' => 'Lotes',
+            'development' => 'Dos Mares',
             'lang' => $lang,
             'type'  => $type,
             'created_at' => $msg->created_at,
         ];
 
         // Enviar la solicitud POST al webhook
-        $response = Http::post($webhookUrl, $data);
+        //$response = Http::post($webhookUrl, $data);
 
 
-        $email = Mail::to('info@domusvallarta.com')->bcc('ventas@punto401.com');
+        $email = Mail::to('hola@residencialdosmares.com')->bcc( ['javier@punto401.com', 'erick@punto401.com'] );
     
         //$email = Mail::to('erick@punto401.com');
         

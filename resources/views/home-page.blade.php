@@ -45,7 +45,7 @@
             </p>
 
             <div class="text-center text-lg-start">
-                <a href="#lead_form" class="btn btn-darkblue px-4 fs-5">
+                <a href="#contact-section" class="btn btn-darkblue px-4 fs-5">
                     {{__('Quiero más información')}}
                 </a>
             </div>
@@ -57,9 +57,9 @@
 
 
     <div class="position-relative pt-6">
-        <img src="{{asset('/img/blue-waves.webp')}}" alt="" class="w-100 position-relative z-2">
+        <img src="{{asset('/img/blue-waves.webp')}}" alt="" class="w-100 position-relative z-2" loading="lazy">
 
-        <img src="{{asset('/img/vista-isometrica-dos-mares.webp')}}" alt="Vista isométrica de Dos Mares" class="position-absolute bottom-0 end-0 z-1 w-85">
+        <img src="{{asset('/img/vista-isometrica-dos-mares.webp')}}" alt="Vista isométrica de Dos Mares" class="position-absolute bottom-0 end-0 z-1 w-85" loading="lazy">
     </div>
     
     {{-- Qué es dos mares --}}
@@ -76,7 +76,7 @@
             </p>
 
             <div class="text-center text-lg-start">
-                <a href="#" class="btn btn-light px-4 fs-5 rounded-4">
+                <a href="https://youtu.be/B1TskH8w48k" data-fancybox="video" class="btn btn-light px-4 fs-5 rounded-4">
                     <i class="fa-solid fa-play"></i> {{__('Ver video')}}
                 </a>
             </div>
@@ -85,9 +85,9 @@
         <div class="col-10 col-lg-2 text-center">
 
             @if ( app()->getLocale() == 'en' )
-                <img src="{{asset('/img/282-lots-en.webp')}}" alt="282 Lots for sale" class="w-50 d-block mx-auto mb-3">  
+                <img src="{{asset('/img/282-lots-en.webp')}}" alt="282 Lots for sale" class="w-50 d-block mx-auto mb-3" loading="lazy">  
             @else
-                <img src="{{asset('/img/282-lotes-es.webp')}}" alt="282 Lotes en venta" class="w-50 d-block mx-auto mb-3">
+                <img src="{{asset('/img/282-lotes-es.webp')}}" alt="282 Lotes en venta" class="w-50 d-block mx-auto mb-3" loading="lazy">
             @endif
 
             <p class="fs-4">{{__('Vivienda unifamiliar')}}</p>
@@ -98,8 +98,42 @@
     {{-- Amenidades --}}
     <div class="row justify-content-between mb-4">
 
-        <div class="col-12 col-lg-6 px-0 mb-5 mb-lg-0">
-            <img src="{{asset('/img/terraza-dos-mares.webp')}}" alt="Terraza de Dos Mares Residencial" class="w-100">
+        <div class="col-12 col-lg-6 px-0 mb-5 mb-lg-0 position-relative">
+
+            <div id="carouselAmenities" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{asset('img/amenities-1.webp')}}" class="d-block w-100" alt="Amenidades de Dos Mares Residencial">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{asset('img/amenities-2.webp')}}" class="d-block w-100" alt="Amenidades de Dos Mares Residencial">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{asset('img/amenities-3.webp')}}" class="d-block w-100" alt="Amenidades de Dos Mares Residencial">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{asset('img/amenities-4.webp')}}" class="d-block w-100" alt="Amenidades de Dos Mares Residencial">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{asset('img/amenities-5.webp')}}" class="d-block w-100" alt="Amenidades de Dos Mares Residencial">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenities" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenities" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+            <img src="{{asset('img/logo-dos-mares-blanco.webp')}}" width="100px" alt="" class="position-absolute top-0 start-0 ms-5 mt-4">
+
         </div>
 
         <div class="col-12 col-lg-5 px-3 px-lg-5 align-self-center">
@@ -201,42 +235,42 @@
     {{-- Master Plan --}}
     <div class="pt-5 row justify-content-evenly position-relative mb-5">
 
-        <img src="{{asset('/img/wavy-bg.webp')}}" alt="" class="w-100 position-absolute top-0 start-0 px-0 z-1">
+        <img src="{{asset('/img/wavy-bg.webp')}}" alt="" class="w-100 position-absolute top-0 start-0 px-0 z-1" loading="lazy">
 
         <div class="col-12 col-lg-5 position-relative z-2 mb-5">
 
-            <div id="carouselExample" class="carousel slide carousel-dark">
+            <div id="carouselAmenities" class="carousel slide carousel-dark">
 
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                        <img src="{{asset('/img/fases-dos-mares.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Fases de Dos mares residencial">
+                        <img src="{{asset('/img/fases-dos-mares.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Fases de Dos mares residencial" loading="lazy">
                     </div>
 
                     <div class="carousel-item ">
-                        <img src="{{asset('/img/fase-2-2-mares.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Master Plan de Dos Mares residencial">
+                        <img src="{{asset('/img/fase-2-2-mares.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Master Plan de Dos Mares residencial" loading="lazy">
                     </div>
 
                     <div class="carousel-item ">
-                        <img src="{{asset('/img/master-plan.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Master Plan de Dos Mares residencial">
+                        <img src="{{asset('/img/master-plan.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Master Plan de Dos Mares residencial" loading="lazy">
                     </div>
 
 
                     <div class="carousel-item p-4">
-                        <img src="{{asset('/img/vista-iso-2.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Vista Isométrica de Dos mares residencial">
+                        <img src="{{asset('/img/vista-iso-2.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Vista Isométrica de Dos mares residencial" loading="lazy">
                     </div>
 
                     <div class="carousel-item p-4">
-                        <img src="{{asset('/img/vista-superior.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Vista superior de Dos mares residencial">
+                        <img src="{{asset('/img/vista-superior.webp')}}" class="d-block w-100 object-fit-contain master-img" alt="Vista superior de Dos mares residencial" loading="lazy">
                     </div>
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenities" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenities" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -273,7 +307,7 @@
             </table>
 
             <div class="text-center text-lg-start">
-                <a href="#lead_form" class="btn btn-darkblue px-4">
+                <a href="#contact-section" class="btn btn-darkblue px-4">
                     {{__('Quiero más información')}}
                 </a>
             </div>
@@ -323,7 +357,7 @@
 
                 <div class="col-12 col-lg-5" style="background-image: url('{{asset('/img/fondo-logo-dos-mares.webp')}}'); background-position:center; background-size:contain; background-repeat:no-repeat; min-height:50vh;">
                     <div class="d-flex h-100">
-                        <img src="{{asset('/img/dos-mares-etapa-1.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 align-self-center" data-fancybox="Fase-1">
+                        <img src="{{asset('/img/dos-mares-etapa-1.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 align-self-center" data-fancybox="Fase-1" loading="lazy">
                     </div>
                 </div>
 
@@ -351,7 +385,7 @@
 
                 <div class="col-12 col-lg-6 px-0 position-relative pb-5 pb-lg-0">
 
-                    <img src="{{asset('/img/dos-mares-segunda-etapa.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 px-2 px-lg-0" data-fancybox="Fase-2">
+                    <img src="{{asset('/img/dos-mares-segunda-etapa.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 px-2 px-lg-0" data-fancybox="Fase-2" loading="lazy">
 
                     <div class="position-absolute start-0 bottom-0 w-25 bg-darkblue p-3 mb-5 mb-lg-0" style="border-top-right-radius: 20px;">
                         <img src="{{asset('/img/planos-segunda-etapa.webp')}}" class="w-100" alt="Planos de segunda etapa de Dos Mares Residencial" data-fancybox="Fase-2">
@@ -369,7 +403,7 @@
 
     {{-- Mapa de ubicación --}}
     <div class="row position-relative mb-6">
-        <img src="{{asset('/img/wavy-bg.webp')}}" alt="" class="w-100 position-absolute top-0 start-0 px-0 z-1">
+        <img src="{{asset('/img/wavy-bg.webp')}}" alt="" class="w-100 position-absolute top-0 start-0 px-0 z-1" loading="lazy">
 
         <div class="col-12 col-lg-4 align-self-end ps-3 ps-lg-5 order-2 order-lg-1 mt-4 mt-lg-0">
             <h4 class="fs-2 mb-4">{{__('Ubicación')}} <img src="{{asset('/img/riviera-nayarit.svg')}}" alt="Riviera Nayarit" height="38px" class="ms-2"></h4>
@@ -417,7 +451,7 @@
         </div>
 
         <div class="col-12 col-lg-8 position-relative z-2 order-1 order-lg-2 pe-0">
-            <img src="{{asset('/img/mapa-de-dos-mares.webp')}}" alt="Mapa de ubicación de Dos Mares Residencial" class="w-100">
+            <img src="{{asset('/img/mapa-de-dos-mares.webp')}}" alt="Mapa de ubicación de Dos Mares Residencial" class="w-100" loading="lazy">
         </div>
 
     </div>
@@ -431,7 +465,7 @@
                 {{__('Playa principal')}}
             </div>
 
-            <img src="{{asset('/img/map-dos-mares.webp')}}" alt="Ubicacion de Dos Mares Residencial" class="w-100">
+            <img src="{{asset('/img/map-dos-mares.webp')}}" alt="Ubicacion de Dos Mares Residencial" class="w-100" loading="lazy">
         </div>
 
         <div class="col-12 col-lg-5 align-self-center px-3 px-lg-5">
