@@ -239,7 +239,7 @@
 
         <div class="col-12 col-lg-5 position-relative z-2 mb-5">
 
-            <div id="carouselAmenities" class="carousel slide carousel-dark">
+            <div id="carouselPhases" class="carousel slide carousel-dark">
 
                 <div class="carousel-inner">
 
@@ -266,16 +266,16 @@
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenities" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhases" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenities" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPhases" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
 
-              </div>
+            </div>
             
         </div>
 
@@ -357,7 +357,7 @@
 
                 <div class="col-12 col-lg-5" style="background-image: url('{{asset('/img/fondo-logo-dos-mares.webp')}}'); background-position:center; background-size:contain; background-repeat:no-repeat; min-height:50vh;">
                     <div class="d-flex h-100">
-                        <img src="{{asset('/img/dos-mares-etapa-1.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 align-self-center" data-fancybox="Fase-1" loading="lazy">
+                        <img src="{{asset('/img/master-plan-fase-1.webp')}}" alt="Master Plan de Etapa 1 de Dos Mares Residencial" class="w-100 align-self-center" data-fancybox="Fase-1" loading="lazy">
                     </div>
                 </div>
 
